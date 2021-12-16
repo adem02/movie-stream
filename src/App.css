@@ -2,3 +2,9 @@
   min-height: 100vh;
   color: #fff;
 }
+
+.page_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
