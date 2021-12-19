@@ -43,7 +43,11 @@ const Header = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            Movie Stream
+            <Button sx={{ my: 2, color: 'white', display: 'block' }}
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Movie Stream
+            </Button>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -76,7 +80,7 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -88,7 +92,11 @@ const Header = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            Movie Stream
+            <Button sx={{ my: 2, color: 'white', display: 'block' }}
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              Movie Stream
+            </Button>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

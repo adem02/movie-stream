@@ -1,0 +1,8 @@
+.date_langue {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.description  {
+    margin: 1em 0;
+}
